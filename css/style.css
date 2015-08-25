@@ -53,6 +53,7 @@
 }
 
 .panel-body{
+    height: 300px !important;
     background-color: blanchedalmond !important;
     overflow-y: scroll !important;
     overflow: auto !important
