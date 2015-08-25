@@ -85,7 +85,9 @@ http.get(xmlUri, function(response) {
             // When a client connects, we note it in the console
             io.sockets.on('connection', function (socket) {
                 socket.emit('message', JSON.parse(Array));
-            });      
+            });
+            
+            server.listen(8080);
         });
 	});
 });
