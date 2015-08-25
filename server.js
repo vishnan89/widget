@@ -1,3 +1,4 @@
+
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
@@ -61,7 +62,9 @@ http.get(xmlUri, function(response) {
             // When a client connects, we note it in the console
             io.sockets.on('connection', function (socket) {
                 socket.emit('message', JSON.parse(Array));
-            });                     
+            });    
+            
+            //server.listen(8000);
         });
 	});
 });
@@ -80,7 +83,7 @@ app.use(express.static(path.resolve('./')));
 
 
 app.get('/index', function(req, res) {
-   res.sendFile('index.html');
+      res.sendFile('index.html');
 });
 
 /* ******************
