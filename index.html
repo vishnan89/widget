@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html >
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Angularjs ui.bootstrap accordion test</title>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+<html ng-app="acc-test">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/1.1.0/css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/1.1.0/css/ionic.css">
+  </head>
+  <body>
+      
+    <div ng-controller="AccordionDemoCtrl" id="widgetAccordian">
+        
+      <!---First Widget--->
+      <accordion close-others="oneAtATime">    
+        <accordion-group is-open="true" class="">      
+            <accordion-heading>
+                <button type="button" class="btn btn-danger font20 bold black-border" style="width:100%">
+                <i class="fa fa-plane fa-lg pad-right5"></i>        
+                <span class="badge badgeMargin">2</span>Leave Widget</button>
+            </accordion-heading>    
+            <p>
+                <div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3 class="pad-right15 margin-top20 underline">
+                            Leave Balance Details:</h3>
+                            <p class="pad-right15 margin-top40 font20 bold">Leave remaing for current quarter: 3 day(s)</p>
+                            <p  class="pad-right15 margin-top40 font20 bold">Unapproved leaves: 2 day(s)</p>    
+                        </div>
+                        <div class="col-md-2">
+                         <image class="img-responsive center-block" src="/images/plane.png"></image>
+                        </div>         
+                    </div>
+                </div>
+            </p>
+        </accordion-group>
+          
+        <!---Second Widget--->  
+        <accordion-group class="">      
+            <accordion-heading>
+                <button type="button" class="btn btn-warning font20 bold black-border" style="width:100%">
+                <i class="fa fa-envelope fa-lg pad-right5"></i>    
+                <span class="badge badgeMargin">3</span>Courier Widget</button>
+            </accordion-heading>    
+            <p>
+                <div>
+                     <div class="row">
+                        <div class="col-md-10">
+                            <p class="pad-right15 margin-top20 font20 bold">You have 3 unclaimed courier/letter !!!</p>
+                            <p class="pad-right15 margin-top40 font20 bold">Please reach out to the Admin team and collect them at the earliest. Thanks.</p>    
+                         </div>
+                          <div class="col-md-2">
+                             <image class="img-responsive center-block" src="/images/courier.png"></image>   
+                         </div>
+                    </div>
+                </div>
+            </p>
+        </accordion-group>
+          
+        <!---Third Widget--->
+        <accordion-group class="">      
+            <accordion-heading>
+                <button type="button" class="btn btn-success font20 bold black-border" style="width:100%">
+                <i class="fa fa-medkit fa-lg pad-right5"></i>
+                Health Widget</button>
+            </accordion-heading>    
+            <p>
+                <div>
+                    <div class="row">
+                        <image class="img-responsive center-block fruit" src="/images/dragon_fruit.png"></image> 
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">            
+                            <p class="pad-right15 margin-top20 font20 bold">Dragon fruit also known as pitaya belongs to family of cactus. The fruit is normally grown in tropical and subtropical areas which includes Asia and Latin America. It has a red peel with green sclaes on it while the inside colour of the fruit is white, magenta or pink flesh with black seeds.The fruit is named dragon fruit because of its overall shape that resembles a dragon. It is full of nutrients which is essential for good health.</p>
+
+                            <p class="pad-right15 margin-top20 font20 bold">Here are some health benefits of dragon fruit:</p>
+                            <ul>
+                                <li class="pad-right15 margin-top20 font20 bold">Source of fibre: Dragon fruit is good for digestion because of its high fibre content. The fibers in the fruit helps in keeping better bowel movements. It is also good for constipation as it cleans the digestive system.</li>
+                                <li class="pad-right15 margin-top20 font20 bold">Good for diabetes: High amount of fibre content in the fruit helps to stabilize the blood sugar levels in a diabetic person by suppressing sugar spikes.</li>
+                                <li class="pad-right15 margin-top20 font20 bold">Source of antioxidants: As the fruit is a natural source of antioxidants, it helps us free from radicals that causes deadly disease like cancer and other unwanted health issues.</li>
+                                <li class="pad-right15 margin-top20 font20 bold">Good for heart: Dragon fruit is good for heart as it decreases bad cholesterol levels and then replenishes good levels. It is an excellent source of monounsaturated fats which helps the heart stay healthy.</li>
+                            </ul>
+                        </div>                    
+                    </div>
+                </div>
+            </p>
+        </accordion-group>   
+          
+        <!---Fourth Widget--->
+        <accordion-group class="">      
+            <accordion-heading>
+                <button type="button" class="btn btn-primary font20 bold black-border" style="width:100%">
+                <i class="fa fa-calendar fa-lg pad-right5"></i>    
+                <span class="badge badgeMargin">1</span>Event Widget</button>
+            </accordion-heading>    
+            <p>
+                <div>
+                     <div class="row">
+                        <div class="col-md-10">
+                            <h4 class="pad-right15 margin-top20">You have one upcoming event(s) this month!</h4>
+                            <h4 class="pad-right15 margin-top20 underline">Event Details:</h4>   
+                            <table class="table margin-top40 tableStyle">      
+                                <thead>
+                                    <tr>          
+                                        <th class="bold">Name :</th>
+                                        <th class="bold">All Employee Meeting</th>          
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>          
+                                        <td class="bold">Venue : </td>
+                                        <td class="bold">Chennai Offshore, Chennai - CAT</td>          
+                                    </tr>
+                                    <tr>          
+                                        <td class="bold">Date : </td>
+                                        <td class="bold">30-08-2015</td>          
+                                    </tr>
+                                    <tr>          
+                                        <td class="bold">Time :</td>
+                                        <td class="bold">3.00 pm</td>        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>  
+                         <div id="calender" class="col-md-2">        
+                            <image class="img-responsive center-block" src="/images/tear_of_calendar.png"></image>         
+                        </div>            
+                    </div>
+                </div>
+            </p>
+        </accordion-group>
+          
+      </accordion>
+    </div>
+  </body>
+</html>
+      
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="/js/index.js"></script>            
+     <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+       <script>
+            var socket = io.connect('http://localhost');
+            socket.on('news', function (data) {
+                alert(data);
+            });
+</script>
+  </body>
+</html>

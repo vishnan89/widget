@@ -1,0 +1,75 @@
+
+#widgetAccordian{
+  padding: 20px;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
+  overflow: auto !important
+}
+
+.black-border{
+    border: black 2px solid !important
+}
+
+.pad-right15{
+    padding-left: 15px !important;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.margin-top20{
+    margin-top: 20px !important
+}
+
+.margin-top40{
+    margin-top: 40px !important
+}
+
+.overflow-auto{
+    overflow-y: scroll !important;
+}
+
+.bold{
+    font-weight: bold !important;
+}
+
+.font20{
+    font-size: 20px !important
+}
+
+.pad-right5 {
+    padding-right: 5px !important
+}
+.tableStyle{
+    width: 500px !important;
+    margin-left: 50px !important;
+}
+
+.tabFont{
+    font-size: 20px !important;
+    font-weight: bold
+}
+
+.panel-body{
+    background-color: blanchedalmond !important;
+    overflow-y: scroll !important;
+    overflow: auto !important
+}
+.bgColor{
+    background-color: blanchedalmond !important
+}
+
+
+.badgeMargin{
+    margin-right: 10px!important;
+    margin-bottom: 3px !important;
+    color: white !important;
+    background-color: black !important
+}
+
+.fruit{
+    height: 200px !important;
+    width:300px !important
+}
