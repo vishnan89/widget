@@ -1,35 +1,5 @@
 var http = require('http');
 var fs = require('fs');
-var path = require('path');
-var express = require('express');
-var $ = require('jquery');
-
-
-
-// Instantiate the express object
-var app = express();
-
-// Use the static assets from the same directory as this server.js file
-app.use(express.static(path.resolve('./')));
-
-/* **************
- * GET Requests *
- * **************/
-
-// index.html
-app.get('/', function(req, res) {
-  res.sendFile('index.html');
-});
-
-/* ******************
- * Start the server *
- * ******************/
-
-var port = process.env.PORT || 8000;
-
-var server = app.listen(port, function() {
-  console.log('Listening on port:', port);
-});
 
 var Array = [];
 
@@ -41,8 +11,6 @@ var parserOptions = {
 	explicitArray:false
 }
 
-// This is the path to the file to which the JSON will be written to
-var outputFile = "./output.json";
 
 // I'm reading this sample XML file.
 var xmlUri = "http://totheriver.com/learn/xml/code/employees.xml";
@@ -86,12 +54,11 @@ http.get(xmlUri, function(response) {
             // When a client connects, we note it in the console
             io.sockets.on('connection', function (socket) {
                 socket.emit('message', JSON.parse(Array));
-            });      
-            
+            });
+
+
             server.listen(8080);
         });
 	});
 });
-
-
 
