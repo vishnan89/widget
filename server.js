@@ -87,6 +87,8 @@ http.get(xmlUri, function(response) {
             io.sockets.on('connection', function (socket) {
                 socket.emit('message', JSON.parse(Array));
             });      
+            
+            server.listen(8080);
         });
 	});
 });
